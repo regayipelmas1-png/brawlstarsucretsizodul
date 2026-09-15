@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Özel Ödül 🎁</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #17132b;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .box {
+      max-width: 400px;
+      margin: auto;
+      background: #292044;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 0 25px #0008;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .reward {
+      font-size: 22px;
+      margin: 15px;
+    }
+
+    button {
+      border: 0;
+      padding: 15px 25px;
+      border-radius: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #joke {
+      display: none;
+      margin-top: 25px;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>🎁 ÖZEL ÖDÜL!</h1>
+
+    <div class="reward">🪙 999.999 Altın</div>
+    <div class="reward">💎 9.999 Elmas</div>
+    <div class="reward">🎟️ 100 Brawl Pass Seviyesi</div>
+
+    <button onclick="showJoke()">ÖDÜLÜ KONTROL ET</button>
+
+    <div id="joke">
+      😂 ŞAKALANDIN!<br><br>
+      Bu tamamen kurgusal bir şakaydı. 💀
+    </div>
+  </div>
+
+  <script>
+    function showJoke() {
+      document.getElementById("joke").style.display = "block";
+    }
+  </script>
+</body>
+</html>
